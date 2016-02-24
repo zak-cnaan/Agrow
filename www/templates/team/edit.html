@@ -1,0 +1,23 @@
+<div class="bar bar-header bar-stable">
+    <h1 class="title">Add / Edit Item</h1>
+    <a ui-sref="team-index" class="button button-assertive">Cancel</a>
+</div>
+<ion-content class="has-header">
+    <div ng-init="findOne()">
+        <form name="teamForm" ng-submit="save(item)">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Name</span>
+                    <input type="text" ng-model="item.name" >
+                </label>
+            </div>
+
+            <div class="padding">
+                <input class="button button-block button-dark" type="submit" value="SAVE" />
+            </div>
+
+
+
+        </form>
+    </div>
+</ion-content>

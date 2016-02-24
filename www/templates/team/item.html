@@ -1,0 +1,11 @@
+<ion-content padding="true">
+    <div ng-init="findOne()" class="card">
+        <div class="item item-text-wrap">
+            <h1>{{item.name}}</h1>
+        </div>
+    </div>
+    <div>
+        <a class="button icon-left ion-chevron-left button-dark" ui-sref="team-index">Bo back</a>
+        <a class="button icon-left ion-edit button-dark" href="#/team/edit/{{item.id}}">Edit</a>
+    </div>
+</ion-content>
